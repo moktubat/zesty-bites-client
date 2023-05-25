@@ -1,5 +1,8 @@
 import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
+import ChefRecommend from "../ChefRecommend/ChefRecommend";
+import Contact from "../Contact/Contact";
+import Cover from "../Cover/Cover";
 import Featured from "../Featured/Featured";
 import PopularMenu from "../PopularMenu/PopularMenu";
 import Testimonial from "../Testimonial/Testimonial";
@@ -9,7 +12,10 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Category></Category>
+            <Cover></Cover>
             <PopularMenu></PopularMenu>
+            <Contact></Contact>
+            <ChefRecommend></ChefRecommend>
             <Featured></Featured>
             <Testimonial></Testimonial>
         </div>
