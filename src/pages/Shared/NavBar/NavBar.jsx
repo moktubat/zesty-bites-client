@@ -1,8 +1,27 @@
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const navOption = (
+    <>
+      <li>
+        <Link>Home</Link>
+      </li>
+      <li>
+        <Link>CONTACT us</Link>
+      </li>
+      <li>
+        <Link>Our Menu</Link>
+      </li>
+      <li>
+        <Link>Our Shop</Link>
+      </li>
+      <li>
+        <Link>SIGN OUT</Link>
+      </li>
+    </>
+  );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar fixed z-10 bg-opacity-30 bg-black text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -23,26 +42,16 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact uppercase font-extrabold dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <Link>Item 1</Link>
-            </li>
-            <li>
-              <Link>Item 3</Link>
-            </li>
+            {navOption}
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+        <Link className="btn btn-ghost normal-case text-xl">Zesty<br />Bites</Link>
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link>Item 1</Link>
-          </li>
-          <li>
-            <Link>Item 3</Link>
-          </li>
+        <ul className="menu uppercase font-bold menu-horizontal">
+        {navOption}
         </ul>
       </div>
     </div>
