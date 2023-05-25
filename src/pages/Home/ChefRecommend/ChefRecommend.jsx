@@ -4,12 +4,9 @@ import cardImg from "../../../assets/others/recommed.jpg";
 const ChefRecommend = () => {
   return (
     <div>
-      <SectionTitle
-        subHeading={"Should Try"}
-        heading={"CHEF RECOMMENDS"}
-      ></SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-10">
-        <div className="card card-compact w-full bg-base-100 shadow-xl">
+      <SectionTitle subHeading={"Should Try"} heading={"CHEF RECOMMENDS"} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-center gap-4 mb-20 mx-10">
+        <div className="card card-compact bg-base-100 shadow-xl">
           <figure>
             <img
               className="object-cover w-full h-64 md:h-40 lg:h-48"
@@ -32,7 +29,7 @@ const ChefRecommend = () => {
           </div>
         </div>
 
-        <div className="card card-compact w-full bg-base-100 shadow-xl">
+        <div className="card card-compact bg-base-100 shadow-xl">
           <figure>
             <img
               className="object-cover w-full h-64 md:h-40 lg:h-48"
@@ -55,7 +52,7 @@ const ChefRecommend = () => {
           </div>
         </div>
 
-        <div className="card card-compact w-full bg-base-100 shadow-xl">
+        <div className="card card-compact bg-base-100 shadow-xl">
           <figure>
             <img
               className="object-cover w-full h-64 md:h-40 lg:h-48"

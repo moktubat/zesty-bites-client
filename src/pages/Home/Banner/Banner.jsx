@@ -9,26 +9,28 @@ import bannerImg6 from "../../../assets/home/06.png";
 
 const Banner = () => {
   return (
-    <Carousel showStatus={false} className="text-center">
+    <div>
+      <Carousel showStatus={false} className="text-center" autoPlay>
       <div>
-        <img src={bannerImg1} />
+        <img src={bannerImg1} alt="Banner 1" />
       </div>
       <div>
-        <img src={bannerImg2} />
+        <img src={bannerImg2} alt="Banner 2" />
       </div>
       <div>
-        <img src={bannerImg3} />
+        <img src={bannerImg3} alt="Banner 3" />
       </div>
       <div>
-        <img src={bannerImg4} />
+        <img src={bannerImg4} alt="Banner 4" />
       </div>
       <div>
-        <img src={bannerImg5} />
+        <img src={bannerImg5} alt="Banner 5" />
       </div>
       <div>
-        <img src={bannerImg6} />
+        <img src={bannerImg6} alt="Banner 6" />
       </div>
     </Carousel>
+    </div>
   );
 };
 
