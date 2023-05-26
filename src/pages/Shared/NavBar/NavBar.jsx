@@ -4,13 +4,13 @@ const NavBar = () => {
   const navOption = (
     <>
       <li>
-        <Link>Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <Link>CONTACT us</Link>
       </li>
       <li>
-        <Link>Our Menu</Link>
+        <Link to="/menu">Our Menu</Link>
       </li>
       <li>
         <Link>Our Shop</Link>
@@ -47,11 +47,15 @@ const NavBar = () => {
             {navOption}
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl">Zesty<br />Bites</Link>
+        <Link className="btn btn-ghost normal-case text-xl">
+          Zesty
+          <br />
+          Bites
+        </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu uppercase font-bold menu-horizontal">
-        {navOption}
+          {navOption}
         </ul>
       </div>
     </div>
